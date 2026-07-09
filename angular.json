@@ -31,6 +31,12 @@
                 "input": "public"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "public/assets/scss",
+                "."
+              ]
+            },
             "styles": [
               "src/styles.scss"
             ],
