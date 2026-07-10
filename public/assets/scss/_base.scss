@@ -1,1 +1,24 @@
 @forward "color";
+
+:root {
+  --header-height: 64px;
+  --footer-height: 34px;
+  --content-height: 500px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  padding: 0 1em;
+}
