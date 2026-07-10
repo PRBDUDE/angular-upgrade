@@ -23,3 +23,15 @@
     margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    &-title {
+      font-size: 12pt;
+    }
+
+    &-sub-title {
+      font-size: 12pt;
+    }
+  }
+}
