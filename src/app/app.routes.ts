@@ -36,5 +36,16 @@ export const routes: Routes = [
     loadComponent: () => import('./feature/feature-2/feature-2.component')
       .then(m => m.Feature2Component),
     title: 'Feature Two'
+  },
+  {
+    path: 'page-not-found',
+    loadComponent: () => import('./core/page-not-found/page-not-found.component')
+      .then(m => m.PageNotFoundComponent),
+    title: 'Page Not Found'
+  },
+  {
+    path: '**',
+    redirectTo: '/page-not-found',
+    pathMatch: 'full'
   }
 ];
