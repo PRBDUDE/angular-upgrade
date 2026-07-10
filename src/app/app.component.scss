@@ -19,6 +19,7 @@
 }
 
 .content-container {
+  height: var(--content-height);
   max-height: var(--content-height);
   grid-area: content;
   overflow-y: auto;
@@ -26,4 +27,19 @@
 
 .footer-container {
   grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-layout {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .menu-container {
+    display: none;
+  }
 }
