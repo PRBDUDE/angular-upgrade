@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {MenuComponent} from '../../menu/menu.component';
 
 @Component({
   selector: 'prb-mobile-menu',
-  standalone: true,
   imports: [
     MenuComponent
   ],
