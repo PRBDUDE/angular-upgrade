@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {HeaderService} from '../services/header.service';
 
 @Component({
   selector: 'prb-header',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  headerService = inject(HeaderService);
 }
