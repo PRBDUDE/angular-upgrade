@@ -1,0 +1,29 @@
+.page-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 180px 1fr;
+}
+
+.header-container {
+  grid-area: header;
+}
+
+.menu-container {
+  padding: 0 1rem 0 0;
+  grid-area: menu;
+  background-color: var(--color-menu-background);
+  overflow-y: auto;
+}
+
+.content-container {
+  max-height: var(--content-height);
+  grid-area: content;
+  overflow-y: auto;
+}
+
+.footer-container {
+  grid-area: footer;
+}
