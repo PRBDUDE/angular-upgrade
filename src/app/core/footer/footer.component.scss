@@ -2,10 +2,10 @@
   width: 100vw;
   display: block;
   position: fixed;
-  //bottom: 0;
   padding: 10px;
   text-align: center;
   background-color: var(--color-footer-background);
   color: var(--color-footer-text);
   font-size: 9pt;
+  max-height: var(--footer-height);
 }
