@@ -1,1 +1,13 @@
-<p>header works!</p>
+<div class="header">
+  <div class="header-image">
+    <img src="/assets/images/roadblocks-logo.png" alt="PRB Dude Logo">
+  </div>
+  <div class="header-title">
+    Programmer Roadblocks
+  </div>
+  @if (headerService.subtitle()) {
+    <div class="header-sub-title">
+      {{ headerService.subtitle() }}
+    </div>
+  }
+</div>
