@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {BasePageWithSubtitleComponent} from '../../core/base-page-with-subtitle/base-page-with-subtitle';
 
 @Component({
   selector: 'prb-contact',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent extends BasePageWithSubtitleComponent{
+    override pageSubtitle = 'Contact Us';
 
 }
