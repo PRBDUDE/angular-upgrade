@@ -1,10 +1,13 @@
 import { Component, inject } from '@angular/core';
 import {HeaderService} from '../services/header.service';
+import {MobileMenuComponent} from './mobile-menu/mobile-menu.component';
 
 @Component({
   selector: 'prb-header',
   standalone: true,
-  imports: [],
+  imports: [
+    MobileMenuComponent
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -1,0 +1,11 @@
+<button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle navigation">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<div class="menu-backdrop" [class.active]="isMenuOpen" (click)="isMenuOpen = false"></div>
+
+<div class="mobile-drawer" [class.open]="isMenuOpen">
+  <prb-menu/>
+</div>

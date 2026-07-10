@@ -5,6 +5,7 @@
   padding: 0.5rem;
   background-color: var(--color-header-background);
   color: var(--color-header-text);
+  max-height: var(--header-height);
 
   &-image {
     padding-left: 1em;
@@ -24,14 +25,24 @@
   }
 }
 
+.menu-touch {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     &-title {
       font-size: 12pt;
+      max-width: 150px;
     }
 
     &-sub-title {
       font-size: 12pt;
     }
+  }
+
+  .menu-touch {
+    display: block;
+    width: 1.5em;
   }
 }
