@@ -1,6 +1,6 @@
 # AngularUpgrade
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.25.
 
 ## Development server
 
