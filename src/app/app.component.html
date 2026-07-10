@@ -1,1 +1,14 @@
-<router-outlet />
+<div class="page-layout">
+  <div class="header-container">
+    <prb-header/>
+  </div>
+  <div class="menu-container">
+    <prb-menu/>
+  </div>
+  <div #content class="content-container">
+    <router-outlet/>
+  </div>
+  <div class="footer-container">
+    <prb-footer/>
+  </div>
+</div>
