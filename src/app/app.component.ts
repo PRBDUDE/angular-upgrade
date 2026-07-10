@@ -6,7 +6,6 @@ import {MenuComponent} from './core/menu/menu.component';
 
 @Component({
   selector: 'prb-root',
-  standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

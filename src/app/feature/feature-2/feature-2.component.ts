@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {BasePageWithSubtitleComponent} from '../../core/base-page-with-subtitle/base-page-with-subtitle';
 
 @Component({
   selector: 'prb-feature-2',
-  standalone: true,
   imports: [],
   templateUrl: './feature-2.component.html',
   styleUrl: './feature-2.component.scss'
 })
-export class Feature2Component extends BasePageWithSubtitleComponent{
-    override pageSubtitle = 'Feature Two';
+export class Feature2Component extends BasePageWithSubtitleComponent {
+  override pageSubtitle = 'Feature Two';
 
 }

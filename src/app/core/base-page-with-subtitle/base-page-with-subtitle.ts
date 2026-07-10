@@ -2,7 +2,8 @@ import {Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {HeaderService} from '../services/header.service';
 
 @Component({
-  template: ``
+  template: ``,
+  standalone: false
 })
 export abstract class BasePageWithSubtitleComponent implements OnInit, OnDestroy {
   protected headerService = inject(HeaderService);

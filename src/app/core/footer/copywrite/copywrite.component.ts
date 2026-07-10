@@ -2,7 +2,6 @@ import {Component, input} from '@angular/core';
 
 @Component({
   selector: 'prb-copywrite',
-  standalone: true,
   imports: [],
   template: `
     {{ copyrightHolder() }} &copy; {{ year }}
