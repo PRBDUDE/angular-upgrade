@@ -11,6 +11,5 @@ import {MenuComponent} from './core/menu/menu.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Angular Upgrade';
 
 }
