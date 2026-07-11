@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CopywriteComponent } from './copywrite.component';
+import {CopywriteComponent} from './copywrite.component';
 
 describe('CopywriteComponent', () => {
   let component: CopywriteComponent;
@@ -9,8 +9,7 @@ describe('CopywriteComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [CopywriteComponent]
-    })
-    .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CopywriteComponent);
     component = fixture.componentInstance;
