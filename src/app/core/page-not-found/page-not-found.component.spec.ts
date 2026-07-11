@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {PageNotFoundComponent} from './page-not-found.component';
+import {BasePageWithSubtitleComponent} from '../base-page-with-subtitle/base-page-with-subtitle';
 
 describe('PageNotFoundComponent', () => {
   let component: PageNotFoundComponent;
@@ -8,7 +9,10 @@ describe('PageNotFoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PageNotFoundComponent]
+      imports: [
+        PageNotFoundComponent,
+        BasePageWithSubtitleComponent
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PageNotFoundComponent);
@@ -18,5 +22,9 @@ describe('PageNotFoundComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should set pageSubtitle', () => {
+    expect(component.pageSubtitle).toEqual('Page Not Found');
   });
 });

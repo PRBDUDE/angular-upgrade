@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {FooterComponent} from './footer.component';
+import {CopyrightComponent} from './copyright/copyright.component';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,7 +9,10 @@ describe('FooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [
+        FooterComponent,
+        CopyrightComponent
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(FooterComponent);

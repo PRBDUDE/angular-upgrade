@@ -1,14 +1,14 @@
 import {Component, input} from '@angular/core';
 
 @Component({
-  selector: 'prb-copywrite',
+  selector: 'prb-copyright',
   imports: [],
   template: `
     {{ copyrightHolder() }} &copy; {{ year }}
   `,
-  styleUrl: './copywrite.component.scss'
+  styleUrl: './copyright.component.scss'
 })
-export class CopywriteComponent {
+export class CopyrightComponent {
   copyrightHolder = input<string>('Programmer Roadblocks');
   year = new Date().getFullYear();
 }

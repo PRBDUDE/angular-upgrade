@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {AboutComponent} from './about.component';
+import {BasePageWithSubtitleComponent} from '../../core/base-page-with-subtitle/base-page-with-subtitle';
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
@@ -8,7 +9,10 @@ describe('AboutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutComponent]
+      imports: [
+        AboutComponent,
+        BasePageWithSubtitleComponent
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AboutComponent);
@@ -18,5 +22,9 @@ describe('AboutComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Should set subTitle', () => {
+    expect(component.pageSubtitle).toEqual('About Us');
   });
 });

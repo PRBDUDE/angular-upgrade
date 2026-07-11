@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {CopywriteComponent} from './copywrite/copywrite.component';
+import {CopyrightComponent} from './copyright/copyright.component';
 
 @Component({
     selector: 'prb-footer',
     imports: [
-        CopywriteComponent
+        CopyrightComponent
     ],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'
