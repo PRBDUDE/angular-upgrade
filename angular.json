@@ -106,10 +106,17 @@
                 "input": "public"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "public/assets/scss",
+                "."
+              ]
+            },
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "karmaConfig": "karma-config.js"
           }
         }
       }
