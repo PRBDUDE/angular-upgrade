@@ -3,7 +3,7 @@ import {HeaderService} from '../services/header.service';
 
 @Component({
   template: ``,
-  standalone: false
+  standalone: true
 })
 export abstract class BasePageWithSubtitleComponent implements OnInit, OnDestroy {
   protected headerService = inject(HeaderService);
