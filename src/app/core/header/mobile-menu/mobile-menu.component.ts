@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {MenuComponent} from '../../menu/menu.component';
 
 @Component({
@@ -7,6 +7,7 @@ import {MenuComponent} from '../../menu/menu.component';
     MenuComponent
   ],
   templateUrl: './mobile-menu.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './mobile-menu.component.scss'
 })
 export class MobileMenuComponent {

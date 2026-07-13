@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core';
+import {Component, input, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   selector: 'prb-copyright',
@@ -6,6 +6,7 @@ import {Component, input} from '@angular/core';
   template: `
     {{ copyrightHolder() }} &copy; {{ year }}
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './copyright.component.scss'
 })
 export class CopyrightComponent {
