@@ -28,4 +28,12 @@ describe('PageNotFoundComponent', () => {
   it('should set pageSubtitle', () => {
     expect(component.pageSubtitle).toEqual('Page Not Found');
   });
+
+  it('should respect Eager change detection strategy configuration', () => {
+    const componentDef = (component.constructor as any).ɵcmp;
+    // ChangeDetectionStrategy.Eager maps to 1, CheckOnce (OnPush) maps to 0
+    expect(componentDef.type.prototype.constructor.ChangeDetectionStrategy).toBeUndefined();
+    // Alternatively, you can verify the metadata directly if needed:
+    expect(componentDef.onPush).toBe(false);
+  });
 });
